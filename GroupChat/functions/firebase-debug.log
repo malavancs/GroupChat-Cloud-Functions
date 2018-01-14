@@ -1,0 +1,45 @@
+[debug] [2018-01-14T06:07:58.636Z] ----------------------------------------------------------------------
+[debug] [2018-01-14T06:07:58.640Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2018-01-14T06:07:58.640Z] CLI Version:   3.16.0
+[debug] [2018-01-14T06:07:58.640Z] Platform:      darwin
+[debug] [2018-01-14T06:07:58.640Z] Node Version:  v6.11.3
+[debug] [2018-01-14T06:07:58.641Z] Time:          Sun Jan 14 2018 11:37:58 GMT+0530 (IST)
+[debug] [2018-01-14T06:07:58.641Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-01-14T06:07:58.665Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-01-14T06:07:58.665Z] > authorizing via signed-in user
+[debug] [2018-01-14T06:07:58.668Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/groupchatapp-ab4be  
+  
+ Sun Jan 14 2018 11:37:58 GMT+0530 (IST)
+[debug] [2018-01-14T06:08:00.791Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-14T06:08:00.794Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/groupchatapp-ab4be/tokens  
+  
+ Sun Jan 14 2018 11:38:00 GMT+0530 (IST)
+[debug] [2018-01-14T06:08:02.537Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'groupchatapp-ab4be'...
+[info] 
+[info] i  deploying functions
+[debug] [2018-01-14T06:08:05.109Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase serve --only functions",
+    "shell": "firebase experimental:functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "dependencies": {
+    "firebase-admin": "~5.4.2",
+    "firebase-functions": "^0.7.1"
+  },
+  "private": true
+}
+[info] i  functions: ensuring necessary APIs are enabled...
+[debug] [2018-01-14T06:08:05.112Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/cloudfunctions.googleapis.com/projectSettings/groupchatapp-ab4be?view=CONSUMER_VIEW  
+  
+ Sun Jan 14 2018 11:38:05 GMT+0530 (IST)
+[debug] [2018-01-14T06:08:05.113Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/runtimeconfig.googleapis.com/projectSettings/groupchatapp-ab4be?view=CONSUMER_VIEW  
+  
+ Sun Jan 14 2018 11:38:05 GMT+0530 (IST)
